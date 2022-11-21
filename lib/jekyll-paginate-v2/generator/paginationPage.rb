@@ -19,6 +19,7 @@ module Jekyll
         if cur_page_nr == 1
           @dir = page_to_copy.dir
           @name = page_to_copy.name
+          @relative_path = page_to_copy.relative_path
         end
 
         self.process(@name) # Creates the basename and ext member values
